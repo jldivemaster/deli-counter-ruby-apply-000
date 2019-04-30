@@ -13,10 +13,18 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
-  return katz_deli
+#def take_a_number(katz_deli, name)
+#  katz_deli << name
+#  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+#  return katz_deli
+#end
+$counter = 0
+
+def take_a_number(katz_deli)
+  
+  $counter += 1
+  puts $counter.to_s
+  katz_deli << $counter
 end
 
 def now_serving(katz_deli)
