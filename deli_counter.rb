@@ -21,7 +21,7 @@ end
 $counter = 0
 
 def take_a_number(katz_deli)
-  
+
   $counter += 1
   puts $counter.to_s
   katz_deli << $counter
